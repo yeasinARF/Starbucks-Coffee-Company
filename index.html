@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Css link-->
+    <link rel="stylesheet" href="style.css">
+    <!--fontawesome 5 link-->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Starbucks Coffee Company</title>
+  </head>
+  <body>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color: white;">
+        <div class="container my-2">
+          <a class="navbar-brand  " href="#" >
+              <img src="logo.png" style="width:80px; height: 80px;">
+              
+          </a>
+          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <input id="cbtn"type=checkbox>
+            <label for="cbtn" class="menu-btn">
+                <i class="fa  fa-bars fa-lg "></i>
+            </label>
+           
+            
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" ><p class="home">Home</p></a>
+              </li>
+              <li class="nav-item break1" >
+                <hr>
+              </li>
+             
+              <li class="nav-item" style="padding-left: 10px;">
+                <a class="nav-link" href="#" ><p>Menu</p></a>
+              </li>
+              <li class="nav-item break2" >
+                <hr>
+              </li>
+             
+              <li class="nav-item" style="padding-left: 10px;">
+                <a class="nav-link " href="#" ><p>What's New</p></a>
+              </li>
+              <li class="nav-item break3"  >
+                <hr>
+              </li>
+             
+              <li class="nav-item" style="padding-left: 10px;">
+                <a class="nav-link " href="#" ><p>Contact</p></a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-5 firstContainer " >
+        <div class="row g-4 ">
+          <div class="col-12 col-md-6 col-lg-5 col-xl-5 col-xxl-5">
+            <div class="Text1">
+              <h2>It's not just Coffee</h2>
+            </div>
+            <div  class="Text2">
+              <h1>It's<span>Starbucks</span></h1>
+              <p>
+                Starbucks Corporation is an American multinational<br>
+                 chain of coffeehouses 
+                and roastery reserves<br> headquartered in Seattle, Washington.
+                
+              </p>
+            </div>
+            <div class="Button">
+              <a href="https://www.starbucks.com"><button >LEARN MORE</button></a>
+            </div>
+            
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-7 col-xl-7 col-xxl-7 imageClass" >
+            <div class="img1 " >
+              <img src="img1.png" id="imagE" >
+            </div>
+
+
+          </div>
+          
+
+        </div>
+        <div class="row">
+          <div class="Secondcontainer " >
+            <div class="row ">
+              <div class="col-8 col-md-4 col-lg-3 col-xl-2 col-xxl-2 mx-auto d-flex    ImageThumb" style="justify-content: center;align-items: center;">
+                <img src="thumb1.png" style="max-width: 64px;" onclick="ImageChange('img1.png');ChangeBackground('#017143')">
+                <img src="thumb2.png" style="max-width: 64px;" onclick="ImageChange('img2.png');ChangeBackground('#eb7495')">
+                <img src="thumb3.png" style="max-width: 64px;" onclick="ImageChange('img3.png');ChangeBackground('#d752b1')">
+                
+  
+              </div>
+            
+  
+            </div>
+            
+  
+  
+          </div>
+
+        </div>
+        
+        <div class="thirdContainer ">
+          <div class="fb"><a href="https://www.facebook.com/profile.php?id=100009509407869"><i class="fab fa-facebook-f fa-lg"></i></a></div>
+          <div class="ins"><a href="https://www.instagram.com/farhan__asif/"><i class="fab fa-instagram fa-lg"></i></a></div>
+          <div class="tw"><a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter fa-lg"></i></a></div>
+
+        </div>
+        
+        
+        
+      </div>
+      <div class="fourthContainer"  id="fourthContain">
+          
+
+      </div>
+      
+
+
+ 
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      var ImageRemover=document.getElementById('imagE')
+      var ColorChange=document.getElementById('fourthContain')
+     
+      function ImageChange(anything) {
+        ImageRemover.src= anything ;
+
+
+        
+      }
+      function ChangeBackground(color) {
+        ColorChange.style.background= color ;
+
+
+        
+      }
+    </script>
+
+  </body>
+</html>
